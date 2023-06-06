@@ -2,9 +2,7 @@ const removeFromArray = function (array, item) {
   let nuevoArray = [];
 
   for (let i = 1; i < arguments.length; i++) {
-    console.log(arguments[i]);
-
-    if (array.indexOf(arguments[i]) >= 0) {
+    if (array.includes(arguments[i])) {
       array.splice(array.indexOf(arguments[i]), 1);
     }
   }
